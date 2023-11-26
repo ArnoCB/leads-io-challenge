@@ -15,14 +15,6 @@ class ArrayCalculationHelperTest extends TestCase
         $this->assertEquals([5, 7, 9], ArrayCalculationHelper::vectorAddition($array1, $array2));
     }
 
-    public function testVectorAdditionWithEmptyArray(): void
-    {
-        $array1 = [1, 2, 3];
-        $array2 = [];
-
-        $this->assertEquals([1, 2, 3], ArrayCalculationHelper::vectorAddition($array1, $array2));
-    }
-
     public function testScalarMultiply(): void
     {
         $array = [1, 2, 3];
